@@ -79,6 +79,7 @@ var totals = bills.map(function(addTip) {
 });
 console.log(totals);
 */
+/*
 var numbers = [
   [243, 12, 23, 12, 45, 45, 78, 66, 223, 3],
   [34, 2, 1, 553, 23, 4, 66, 23, 4, 55],
@@ -102,3 +103,4 @@ for (var row = 0; row < numbers.length; row++) {
 ;
 
 console.log(numbers);
+*/
