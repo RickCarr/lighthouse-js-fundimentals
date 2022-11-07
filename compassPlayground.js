@@ -104,3 +104,71 @@ for (var row = 0; row < numbers.length; row++) {
 
 console.log(numbers);
 */
+/*  Looping Range Array 
+function range(start, end, step) {
+  const rangeArray = [];
+  start = (start + 0);
+  end = (end + 0);
+  step = (step + 0);
+  if ((start <= end) && (step > 0)) {
+    for (var x = start; x <= end; x = x + step) {
+      rangeArray.push(x);
+    }
+    return rangeArray;
+  }
+  else return rangeArray;
+}
+  
+console.log(range(0, 10, 2));
+console.log(range(10, 30, 5));
+console.log(range(-5, 2, 3));
+*/
+/* "LAST INDEX OF" FUNCTION
+function lastIndexOf(ra, x) {
+  for (let last = ra.length - 1; last >= 0; last--) {
+    if (ra[last] === x) {
+      return last;      
+    }
+  }
+  return -1;
+}
+
+console.log(lastIndexOf([ 0, 1, 4, 1, 2 ], 1), "=?", 3);
+console.log(lastIndexOf([ 0, 1, 4, 1, 2 ], 2), "=?", 4);
+console.log(lastIndexOf([ 0, 1, 4, 1, 2 ], 3), "=?", -1);
+console.log(lastIndexOf([ 5, 5, 5 ], 5), "=?", 2);
+console.log(lastIndexOf([], 3), "=?", -1);
+*/
+/*  CONCATENATE ARRAYS WITHOUT .METHOD
+function concat(ra1, ra2) {
+  const newArray = [];
+  ra1.forEach(function(likes) {
+    newArray.push(likes);
+  });
+  ra2.forEach(function(likes) {
+    newArray.push(likes);
+  });
+  return newArray;
+}
+console.log(concat([ 1, 2, 3 ], [ 4, 5, 6 ]), "=?", [ 1, 2, 3, 4, 5, 6 ]);
+console.log(concat([ 0, 3, 1 ], [ 9, 7, 2 ]), "=?", [ 0, 3, 1, 9, 7, 2 ]);
+console.log(concat([], [ 9, 7, 2 ]), "=?", [ 9, 7, 2 ]);
+console.log(concat([5, 10], []), "=?", [ 5, 10 ]);
+*/
+/* 
+ * DONUT OBJECT ARRAY WITH FOREACH FUNCTION FOR EDITING*
+
+ * - Your code sshould have an array named `donuts`
+ * - Your `donuts` array should call the `forEach()` method
+ * - Your `forEach()` loop should output the donut summaries
+ * - BE CAREFUL ABOUT THE PUNCTUATION, SPACES, AND EXACT WORDS TO BE PRINTED.
+var donuts = [
+  { type: "Jelly", cost: 1.22 },
+  { type: "Chocolate", cost: 2.45 },
+  { type: "Cider", cost: 1.59 },
+  { type: "Boston Cream", cost: 5.99 }
+];
+  donuts.forEach(function(donut) {
+  console.log(donut.type+" donuts cost $"+donut.cost+" each");
+});
+*/
