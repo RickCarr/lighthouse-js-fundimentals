@@ -171,4 +171,113 @@ var donuts = [
   donuts.forEach(function(donut) {
   console.log(donut.type+" donuts cost $"+donut.cost+" each");
 });
+console.log('------------ c style for loop --------------');
+for (let i = 0; i < donuts.length; i++) {
+  console.log(donuts[i].type + " donuts cost $" + donuts[i].cost + " each");
+}
+console.log('------------- for in -----------------------');
+for (let i in donuts) {
+  console.log(donuts[i].type + " donuts cost $" + donuts[i].cost + " each");
+}
+console.log("--------------- for of ------------------"); 
+for (let val of donuts) {
+  console.log(val);
+  console.log(val.type + " donuts cost $" + val.cost + " each");
+}
 */
+/*SMART GARBAGE OBJECT FUNCITON(arrays)
+const smartGarbage = function (trash, bins) {
+  bins[trash] = bins[trash] + 1;
+  console.log(bins);
+  return bins;
+};
+smartGarbage('recycling', { waste: 10, recycling: 10, compost: 10 });
+*/
+
+
+/* SETTING INTERVAL DESYCHRONICITY
+const sayHello = function(string, count) {  // Now printing 'Hello'...
+  if (count === 1) { // Stop the press!
+    clearInterval(timer);
+    return string;
+  }
+  return string + sayHello(string, count - 1);
+}
+const timer = setInterval(sayHello, 3000);
+
+console.log(sayHello("Hello\n", 5))
+*/
+/* DRIVING MAYOR DAISY
+const cars = [
+  {
+    time: 1568329654807,
+    speed: 40,
+  },
+  {
+    time: 1568329821632,
+    speed: 42,
+  },
+  {
+    time: 1568331115463,
+    speed: 35
+  }
+]
+
+const speed = 38
+const carPassing = function (cars, speed) {
+  cars.push( 
+    {
+      time: Date.now(), 
+      speed
+    }
+  );
+  return cars;
+};
+carPassing(cars, speed);
+*/
+/* parameters for JUDGE VEGETABLE
+const vegetables = [
+  {
+    submitter: 'Old Man Franklin',
+    redness: 10,
+    plumpness: 5
+  },
+  {
+    submitter: 'Sally Tomato-Grower',
+    redness: 2,
+    plumpness: 8
+  },
+  {
+    submitter: 'Hamid Hamidson',
+    redness: 4,
+    plumpness: 3
+  }
+]
+const metric = 'redness';
+const judgeVegetable = function (vegetables, metric) {
+  let max = 0;
+  let index = 0;
+  for (let i in vegetables) {
+    if (vegetables[i][metric] > max) {
+      max = vegetables[i][metric];
+      index = i;
+    }        
+  }
+  return vegetables[index].submitter;  
+};
+judgeVegetable(vegetables, metric)
+*/
+//working but not passiing in compass version of above:
+/*
+ const judgeVegetable = function (vegetables, metric) {
+  let max = 0
+  for (let i in vegetables) {
+    if (vegetables[i][metric] > max) {
+      max = vegetables[i][metric];
+      console.log(vegetables[i].submitter);
+    }    
+  }  
+};
+judgeVegetable(vegetables, metric)
+*/
+
