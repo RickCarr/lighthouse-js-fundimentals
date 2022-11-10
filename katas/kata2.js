@@ -1,4 +1,4 @@
-function conditionalSum(values, condition) {
+const conditionalSum = function(values, condition) {
   let evenSum = 0;
   let oddSum = 0;
   if (condition === "even") {
@@ -18,7 +18,6 @@ function conditionalSum(values, condition) {
     return oddSum;
   }  
 };
-
 console.log(conditionalSum([1, 2, 3, 4, 5], "even"));
 console.log(conditionalSum([1, 2, 3, 4, 5], "odd"));
 console.log(conditionalSum([13, 88, 12, 44, 99], "even"));
